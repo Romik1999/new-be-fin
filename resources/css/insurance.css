@@ -1,0 +1,824 @@
+.tpl .tpl-form-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.tpl .tpl-form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.tpl .tpl-form-group_amount .tpl-form-group__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #A3A5B1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 15px;
+  height: 60px;
+}
+
+.tpl .tpl-form-group_amount .tpl-form-group__input {
+  margin-top: 0;
+  border: none;
+  height: 58px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  color: #484E63;
+}
+
+.tpl .tpl-form-group_amount .tpl-form-group__input:focus {
+  border: none;
+}
+
+.tpl .tpl-form-group_amount .tpl-form-group__btn_minus {
+  margin-right: -1px;
+}
+
+.tpl .tpl-form-group__label {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #2C2C2C;
+}
+
+.tpl .tpl-form-group__input {
+  margin-top: 8px;
+  display: block;
+  width: 100%;
+  height: 60px;
+  border: 1px solid #A3A5B1;
+  border-radius: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 17px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #161D35;
+}
+
+.tpl .tpl-form-group__input::-webkit-input-placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: rgba(44, 44, 44, 0.5);
+}
+
+.tpl .tpl-form-group__input::-moz-placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: rgba(44, 44, 44, 0.5);
+}
+
+.tpl .tpl-form-group__input:-ms-input-placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: rgba(44, 44, 44, 0.5);
+}
+
+.tpl .tpl-form-group__input::-ms-input-placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: rgba(44, 44, 44, 0.5);
+}
+
+.tpl .tpl-form-group__input::placeholder {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: rgba(44, 44, 44, 0.5);
+}
+
+.tpl .tpl-form-group__input:focus {
+  border: 1px solid #1A87D8;
+}
+
+.tpl .tpl-form-group__input:focus-visible {
+  outline: none;
+}
+
+.tpl .tpl-form-group__btn {
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #FFFFFF;
+  border: 1px solid #A3A5B1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 8px rgba(10, 20, 116, 0.05);
+          box-shadow: 0px 4px 8px rgba(10, 20, 116, 0.05);
+  position: relative;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.tpl .tpl-form-group__btn:before,
+.tpl .tpl-form-group__btn:after {
+  position: absolute;
+  content: "";
+  display: block;
+  background-color: #1A87D8;
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.tpl .tpl-form-group__btn_plus {
+  border-radius: 15px 0px 0px 15px;
+}
+
+.tpl .tpl-form-group__btn_plus:before {
+  width: 20px;
+  height: 2px;
+}
+
+.tpl .tpl-form-group__btn_plus:after {
+  width: 2px;
+  height: 20px;
+}
+
+.tpl .tpl-form-group__btn_minus {
+  border-radius: 0px 15px 15px 0px;
+}
+
+.tpl .tpl-form-group__btn_minus:before {
+  width: 20px;
+  height: 2px;
+  background-color: #1A87D8;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.tpl .tpl-form-group__btn:hover {
+  background-color: #D9EDF3;
+}
+
+.tpl .tpl-form-submit {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 18px 55px;
+  width: 270px;
+  height: 56px;
+  background: -o-linear-gradient(357.08deg, #1ED372 0%, #16C8D3 100%);
+  background: linear-gradient(92.92deg, #1ED372 0%, #16C8D3 100%);
+  -webkit-box-shadow: 0px 6px 22px rgba(0, 206, 106, 0.35);
+          box-shadow: 0px 6px 22px rgba(0, 206, 106, 0.35);
+  border-radius: 15px;
+  border: none;
+  outline: none;
+}
+
+.tpl .tpl-input-label {
+  margin-bottom: 8px;
+  display: block;
+}
+
+.tpl .tpl-input-label span:last-child {
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 160%;
+  color: #161D35;
+}
+
+.tpl .tpl-checkbox__sign {
+  border: 1px solid #A3A5B1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  min-height: 18px;
+}
+
+.tpl .tpl-checkbox__sign:after {
+  top: 0px;
+  left: 6px;
+  width: 5px;
+  height: 12px;
+  border: solid #1A87D8;
+  border-width: 0 2px 2px 0;
+}
+
+.tpl-steps-progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 7px;
+  background: #DCEFFB;
+  border-radius: 10px;
+  position: relative;
+}
+
+.tpl-steps-progress__fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1A87D8;
+  height: 7px;
+  border-radius: 10px;
+}
+
+.tpl-insurance {
+  padding-top: 64px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 85px;
+}
+
+.tpl-insurance-top {
+  padding-top: 64px;
+  padding-bottom: 72px;
+}
+
+.tpl-insurance-top__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-column-gap: 100px;
+     -moz-column-gap: 100px;
+          column-gap: 100px;
+}
+
+.tpl-insurance-top__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 400px;
+  max-height: 400px;
+  width: 100%;
+  height: auto;
+}
+
+.tpl-insurance-top__image svg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.tpl-insurance-top__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 500px;
+  width: 100%;
+}
+
+.tpl-insurance-top__title {
+  font-weight: 500;
+  font-size: 38px;
+  line-height: 120%;
+  color: #161D35;
+  margin-bottom: 12px;
+}
+
+.tpl-insurance-top__title * {
+  margin: 0;
+  padding: 0;
+}
+
+.tpl-insurance-top__text {
+  font-size: 20px;
+  line-height: 140%;
+  color: #A3A5B1;
+}
+
+.tpl-insurance-top__text * {
+  margin: 0;
+  padding: 0;
+}
+
+.tpl-insurance-top__actions {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: auto 24px 1fr;
+  grid-template-columns: auto 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  grid-gap: 24px;
+  margin-top: 48px;
+  margin-bottom: 24px;
+}
+
+.tpl-insurance-top__actions > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.tpl-insurance-top__actions > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.tpl-insurance-top__actions .tpl-insurance-top__checkbox {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+}
+
+.tpl-insurance-top__checkbox {
+  max-width: 470px;
+  width: 100%;
+}
+
+.tpl-insurance-bottom {
+  background-color: #FAFCFE;
+  padding-top: 52px;
+  padding-bottom: 88px;
+}
+
+.tpl-insurance-bottom__form {
+  margin-top: 74px;
+}
+
+.tpl-insurance-info__top {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 120%;
+  color: #161D35;
+}
+
+.tpl-insurance-info__top span:last-child {
+  color: #1A87D8;
+}
+
+.tpl-insurance-info__items {
+  margin-top: 43px;
+}
+
+.tpl-insurance-info__item:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.tpl-insurance-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.tpl-insurance-item__number {
+  width: 110px;
+  height: 110px;
+}
+
+.tpl-insurance-item__number svg {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.tpl-insurance-item__text {
+  padding-left: 25px;
+  margin: 0;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 140%;
+  color: #161D35;
+}
+
+.tpl-insurance-form {
+  background: #FFFFFF;
+  mix-blend-mode: normal;
+  -webkit-box-shadow: 0px 12px 25px -1px rgba(61, 109, 201, 0.12);
+          box-shadow: 0px 12px 25px -1px rgba(61, 109, 201, 0.12);
+  border-radius: 15px;
+  padding-top: 38px;
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 85px auto;
+  grid-template-columns: 1fr auto;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  grid-row-gap: 23px;
+  grid-column-gap: 85px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.tpl-insurance-form > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.tpl-insurance-form > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.tpl-insurance-form__sum {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 16px;
+     -moz-column-gap: 16px;
+          column-gap: 16px;
+  padding-top: 9px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.tpl-insurance-form__sum_text {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+  color: #161D35;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tpl-insurance-form__sum_text svg {
+  margin-right: 23px;
+}
+
+.tpl-insurance-form__sum_sum {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 140%;
+  color: #1A87D8;
+}
+
+.tpl-insurance-form__info {
+  padding-left: 57px;
+  max-width: 535px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.tpl-insurance-form__info_title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  color: #161D35;
+}
+
+.tpl-insurance-form__info_text {
+  margin-top: 8px;
+  font-size: 18px;
+  line-height: 140%;
+  color: #A3A5B1;
+}
+
+.tpl-insurance-form__actions {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 24px 270px;
+  grid-template-columns: 1fr 270px;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  grid-column-gap: 24px;
+  grid-row-gap: 20px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  grid-row: 1/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.tpl-insurance-form__actions > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.tpl-insurance-form__actions > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.tpl-insurance-form__policy {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  max-width: 270px;
+}
+
+@media screen and (max-width: 1199px) {
+  .tpl-insurance-form {
+    grid-column-gap: 20px;
+  }
+
+  .tpl-insurance-form__sum {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .tpl-insurance-form__sum_sum {
+    padding-left: 57px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .tpl-insurance-top__wrapper {
+    -webkit-column-gap: 20px;
+       -moz-column-gap: 20px;
+            column-gap: 20px;
+  }
+
+  .tpl-insurance-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .tpl-insurance-form__sum {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .tpl-insurance-form__sum_sum {
+    padding-left: 0;
+  }
+
+  .tpl-insurance-form__info {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .tpl-insurance-form__actions {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .tpl .tpl-form-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .tpl .tpl-form-submit {
+    width: 100%;
+  }
+
+  .tpl-insurance-top {
+    padding-top: 32px;
+    padding-bottom: 44px;
+  }
+
+  .tpl-insurance-top__image {
+    display: none;
+  }
+
+  .tpl-insurance-top__info {
+    max-width: 100%;
+  }
+
+  .tpl-insurance-top__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .tpl-insurance-top__text {
+    font-size: 18px;
+  }
+
+  .tpl-insurance-top__actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    grid-gap: 0;
+    margin-top: 34px;
+  }
+
+  .tpl-insurance-top__actions .tpl-btn_abort {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-top: 31px;
+  }
+
+  .tpl-insurance-top__actions .tpl-btn_submit {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .tpl-insurance-top__actions .tpl-insurance-top__checkbox {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 16px;
+  }
+
+  .tpl-insurance-bottom {
+    padding-top: 20px;
+    padding-bottom: 64px;
+  }
+
+  .tpl-insurance-bottom__form {
+    margin-top: 40px;
+  }
+
+  .tpl-insurance-info__top {
+    font-size: 24px;
+  }
+
+  .tpl-insurance-info__items {
+    margin-top: 24px;
+  }
+
+  .tpl-insurance-info__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .tpl-insurance-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .tpl-insurance-item__number {
+    width: 80px;
+    height: 80px;
+  }
+
+  .tpl-insurance-item__text {
+    font-size: 18px;
+    margin-top: 16px;
+  }
+
+  .tpl-insurance-form {
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 44px;
+  }
+
+  .tpl-insurance-form__sum {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+
+  .tpl-insurance-form__sum_text {
+    font-size: 16px;
+  }
+
+  .tpl-insurance-form__sum_text svg {
+    margin-right: 10px;
+  }
+
+  .tpl-insurance-form__sum_sum {
+    margin-top: 26px;
+  }
+
+  .tpl-insurance-form__actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-row-gap: 0;
+    margin-top: 11px;
+  }
+
+  .tpl-insurance-form__actions .tpl-btn_abort {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-top: 31px;
+  }
+
+  .tpl-insurance-form__actions .tpl-btn_submit {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 16px;
+  }
+
+  .tpl-insurance-form__policy {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    max-width: 100%;
+  }
+}
