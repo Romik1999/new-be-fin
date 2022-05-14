@@ -40,7 +40,7 @@
         }
       }
 
-      & .tpl-form-group__btn_minus {
+      & .tpl-form-group__btn_plus {
         margin-right: -1px;
       }
     }
@@ -118,7 +118,7 @@
       }
 
       &_plus {
-        border-radius: 15px 0px 0px 15px;
+        border-radius: 0px 15px 15px 0px;
 
         &:before {
           width: 20px;
@@ -132,7 +132,7 @@
       }
 
       &_minus {
-        border-radius: 0px 15px 15px 0px;
+        border-radius: 15px 0px 0px 15px;
 
         &:before {
           width: 20px;

@@ -2,11 +2,11 @@
 
 .tpl-hero {
   padding-top: 64px;
-  padding-bottom: 26px;
+  padding-bottom: 36px;
 
   @media screen and (max-width: 575px) {
-    padding-top: 21px;
-    padding-bottom: 19px;
+    padding-top: 26px;
+    padding-bottom: 25px;
   }
 
   &__title {

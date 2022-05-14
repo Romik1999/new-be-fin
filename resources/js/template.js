@@ -68,7 +68,7 @@ $(document).ready(function () {
             [0]: {approvalPercent: 50},
         },
     };
-    var $calcForm = $('.tpl-calc-form');
+    var $calcForm = $('.tpl-form-calc');
     $calcForm.each(function (index, elem) {
         var calc = new Calc($(elem), [], sumIntervals);
         calc.init();

@@ -1,6 +1,6 @@
 .tpl-hero {
   padding-top: 64px;
-  padding-bottom: 26px;
+  padding-bottom: 36px;
 }
 
 .tpl-hero__title {
@@ -340,8 +340,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 }
 
 .tpl-advantages-item__icon svg {
@@ -352,7 +352,7 @@
 }
 
 .tpl-advantages-item__title {
-  margin-top: 13px;
+  margin-top: 11px;
   text-align: center;
   min-height: 44px;
 }
@@ -491,7 +491,7 @@
   line-height: 33px;
   text-align: center;
   color: #161D35;
-  max-width: 350px;
+  max-width: 310px;
   width: 100%;
   margin: auto;
   margin-top: 32px;
@@ -514,7 +514,7 @@
 
 .tpl-help {
   background-color: #FAFCFE;
-  padding-top: 90px;
+  padding-top: 86px;
   padding-bottom: 90px;
 }
 
@@ -531,7 +531,7 @@
   grid-template-columns: repeat(auto-fill, minmax(211px, 1fr));
   grid-column-gap: 30px;
   grid-row-gap: 30px;
-  margin-top: 44px;
+  margin-top: 46px;
 }
 
 .tpl-help-bottom {
@@ -592,18 +592,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 34px;
-     -moz-column-gap: 34px;
-          column-gap: 34px;
+  -webkit-column-gap: 44px;
+     -moz-column-gap: 44px;
+          column-gap: 44px;
   margin-top: 52px;
 }
 
 .tpl-help-bottom__button {
   margin-top: 72px;
-}
-
-.tpl-help-bottom .tpl-help-item__text {
-  font-size: 16px;
 }
 
 .tpl-help-item {
@@ -633,13 +629,14 @@
 }
 
 .tpl-help-item__text {
-  max-width: 165px;
+  max-width: 172px;
   width: 100%;
   font-size: 18px;
+  line-height: 140%;
 }
 
 .tpl-faq {
-  padding-top: 104px;
+  padding-top: 102px;
   padding-bottom: 120px;
 }
 
@@ -818,7 +815,7 @@
 }
 
 .tpl-reviews-item__text {
-  margin-top: 16px;
+  margin-top: 14px;
   line-height: 140%;
   color: #202E3D;
 }
@@ -828,7 +825,7 @@
   line-height: 14px;
   letter-spacing: 0.04em;
   color: #202E3D;
-  margin-top: 12px;
+  margin-top: 17px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -838,7 +835,7 @@
 }
 
 .tpl-reviews-item__mark svg {
-  margin-left: 4px;
+  margin-left: 7px;
 }
 
 .tpl-reviews__delimetr {
@@ -1055,8 +1052,8 @@
 
 @media screen and (max-width: 575px) {
   .tpl-hero {
-    padding-top: 21px;
-    padding-bottom: 19px;
+    padding-top: 26px;
+    padding-bottom: 25px;
   }
 
   .tpl-hero__title {
@@ -1134,7 +1131,8 @@
     grid-template-columns: 1fr 1fr;
     -ms-grid-rows: none;
     grid-template-rows: none;
-    grid-gap: 15px;
+    grid-column-gap: 15px;
+    grid-row-gap: 13px;
   }
 
   .tpl-advantages__items > *:nth-child(1) {
@@ -1148,7 +1146,14 @@
   }
 
   .tpl-advantages-item {
-    padding: 8px;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 12px;
+    min-height: 186px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 
   .tpl-advantages-item__icon {
@@ -1156,8 +1161,12 @@
     width: 80px;
   }
 
+  .tpl-advantages-item__title {
+    max-width: 122px;
+  }
+
   .tpl-goals {
-    padding-top: 59px;
+    padding-top: 44px;
   }
 
   .tpl-goals__title {
@@ -1202,7 +1211,7 @@
 
   .tpl-features {
     padding-top: 25px;
-    padding-bottom: 30px;
+    padding-bottom: 32px;
   }
 
   .tpl-features__item:not(:last-child) {
@@ -1217,6 +1226,7 @@
   .tpl-features-item__title {
     font-size: 22px;
     margin-top: 21px;
+    max-width: 240px;
   }
 
   .tpl-features-item__text {
@@ -1241,17 +1251,13 @@
     -ms-grid-rows: none;
     grid-template-rows: none;
     grid-column-gap: 30px;
-    grid-row-gap: 20px;
-    margin-top: 28px;
+    grid-row-gap: 22px;
+    margin-top: 31px;
   }
 
   .tpl-help-top__items > *:nth-child(1) {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
-  }
-
-  .tpl-help-bottom {
-    margin-top: 54px;
   }
 
   .tpl-help-bottom__info {
@@ -1279,7 +1285,7 @@
   }
 
   .tpl-help-bottom__item:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 
   .tpl-faq {
@@ -1315,6 +1321,10 @@
 
   .tpl-reviews__title {
     font-size: 24px;
+  }
+
+  .tpl-reviews__slider {
+    margin-top: 41px;
   }
 
   .tpl-reviews-item {

@@ -43,7 +43,7 @@
   border: none;
 }
 
-.tpl .tpl-form-group_amount .tpl-form-group__btn_minus {
+.tpl .tpl-form-group_amount .tpl-form-group__btn_plus {
   margin-right: -1px;
 }
 
@@ -171,7 +171,7 @@
 }
 
 .tpl .tpl-form-group__btn_plus {
-  border-radius: 15px 0px 0px 15px;
+  border-radius: 0px 15px 15px 0px;
 }
 
 .tpl .tpl-form-group__btn_plus:before {
@@ -185,7 +185,7 @@
 }
 
 .tpl .tpl-form-group__btn_minus {
-  border-radius: 0px 15px 15px 0px;
+  border-radius: 15px 0px 0px 15px;
 }
 
 .tpl .tpl-form-group__btn_minus:before {
