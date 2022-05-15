@@ -68,6 +68,14 @@
     @media screen and (max-width: 575px) {
       font-size: 30px;
       margin-bottom: 20px;
+      max-width: 335px;
+      width: 100%;
+    }
+
+    & br {
+      @media screen and (max-width: 575px) {
+        display: none;
+      }
     }
 
     & * {
@@ -123,7 +131,8 @@
         }
       }
     }
-    & .tpl-insurance-top__checkbox{
+
+    & .tpl-insurance-top__checkbox {
       grid-column: span 2;
 
       @media screen and (max-width: 575px) {
@@ -169,9 +178,31 @@
       font-size: 24px;
     }
 
+    & * {
+      margin: 0;
+      padding: 0;
+    }
+
     & span {
       &:last-child {
         color: $blue1;
+      }
+    }
+
+    & p {
+      &:nth-child(1) {
+        display: block;
+        @media screen and (max-width: 575px) {
+          display: none;
+        }
+      }
+
+      &:nth-child(2) {
+        display: none;
+
+        @media screen and (max-width: 575px) {
+          display: block;
+        }
       }
     }
   }
@@ -287,6 +318,7 @@
       flex-wrap: nowrap;
       align-items: center;
       width: 100%;
+      padding-top: 0;
     }
 
     &_text {
@@ -299,6 +331,7 @@
 
       @media screen and (max-width: 575px) {
         font-size: 16px;
+        width: 100%;
       }
 
       & svg {
@@ -306,6 +339,8 @@
 
         @media screen and (max-width: 575px) {
           margin-right: 10px;
+          width: 27px;
+          height: 27px;
         }
       }
     }

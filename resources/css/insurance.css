@@ -414,8 +414,21 @@
   color: #161D35;
 }
 
+.tpl-insurance-info__top * {
+  margin: 0;
+  padding: 0;
+}
+
 .tpl-insurance-info__top span:last-child {
   color: #1A87D8;
+}
+
+.tpl-insurance-info__top p:nth-child(1) {
+  display: block;
+}
+
+.tpl-insurance-info__top p:nth-child(2) {
+  display: none;
 }
 
 .tpl-insurance-info__items {
@@ -675,6 +688,12 @@
   .tpl-insurance-top__title {
     font-size: 30px;
     margin-bottom: 20px;
+    max-width: 335px;
+    width: 100%;
+  }
+
+  .tpl-insurance-top__title br {
+    display: none;
   }
 
   .tpl-insurance-top__text {
@@ -729,6 +748,14 @@
     font-size: 24px;
   }
 
+  .tpl-insurance-info__top p:nth-child(1) {
+    display: none;
+  }
+
+  .tpl-insurance-info__top p:nth-child(2) {
+    display: block;
+  }
+
   .tpl-insurance-info__items {
     margin-top: 24px;
   }
@@ -775,14 +802,18 @@
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
+    padding-top: 0;
   }
 
   .tpl-insurance-form__sum_text {
     font-size: 16px;
+    width: 100%;
   }
 
   .tpl-insurance-form__sum_text svg {
     margin-right: 10px;
+    width: 27px;
+    height: 27px;
   }
 
   .tpl-insurance-form__sum_sum {

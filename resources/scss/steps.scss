@@ -7,7 +7,7 @@
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 56px;
-    padding-bottom: 90px;
+    padding-bottom: 88px;
 
     @media screen and (max-width: 575px) {
       padding-top: 16px;
@@ -36,7 +36,7 @@
       margin-top: 48px;
 
       @media screen and (max-width: 575px) {
-        margin-top: 30px;
+        margin-top: 27px;
       }
     }
 
@@ -55,12 +55,14 @@
     &__form {
       max-width: 670px;
       width: 100%;
+      padding-top: 5px;
 
       @media screen and (max-width: 990px) {
         margin-top: 50px;
       }
       @media screen and (max-width: 575px) {
         margin-top: 27px;
+        padding-top: 0;
       }
     }
 
@@ -131,7 +133,9 @@
 
         @media screen and (max-width: 575px) {
           font-size: 24px;
-          margin-bottom: 25px;
+          margin-bottom: 26px;
+          max-width: 246px;
+          width: 100%;
         }
 
 
@@ -160,6 +164,10 @@
         line-height: 140%;
         color: $grey;
         margin-top: 20px;
+
+        @media screen and (max-width: 575px) {
+          margin-top: 23px;
+        }
       }
 
       .tpl-form {

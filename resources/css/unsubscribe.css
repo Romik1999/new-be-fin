@@ -270,6 +270,14 @@
   padding-bottom: 88px;
 }
 
+.tpl-unsubscribe#unsubscribe2 .tpl-unsubscribe-data {
+  padding-top: 41px;
+}
+
+.tpl-unsubscribe#unsubscribe2 .tpl-unsubscribe-data__title {
+  margin-bottom: 20px;
+}
+
 .tpl-unsubscribe#unsubscribe2 .tpl-unsubscribe-form__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -287,6 +295,24 @@
 .tpl-unsubscribe#unsubscribe2 .tpl-unsubscribe-form__left {
   width: 100%;
   max-width: 210px;
+}
+
+.tpl-unsubscribe#unsubscribe3 .tpl-unsubscribe-data {
+  padding-top: 38px;
+  padding-bottom: 56px;
+}
+
+.tpl-unsubscribe#unsubscribe4 .tpl-unsubscribe-data {
+  padding-top: 40px;
+  padding-bottom: 56px;
+}
+
+.tpl-unsubscribe#unsubscribe4 .tpl-unsubscribe-data__title {
+  margin-bottom: 19px;
+}
+
+.tpl-unsubscribe#unsubscribe4 .tpl-unsubscribe-data__form {
+  margin-top: 24px;
 }
 
 .tpl-unsubscribe#unsubscribe4 .tpl-unsubscribe-data__btn {
@@ -403,7 +429,7 @@
 
 .tpl-unsubscribe-data__success {
   margin-top: 24px;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
 }
 
 .tpl-unsubscribe-form {
@@ -516,6 +542,34 @@
     width: 100%;
   }
 
+  .tpl-unsubscribe {
+    padding-bottom: 64px;
+  }
+
+  .tpl-unsubscribe#unsubscribe2 .tpl-unsubscribe-data {
+    padding-top: 44px;
+  }
+
+  .tpl-unsubscribe#unsubscribe2 .tpl-unsubscribe-form__button {
+    margin-top: 28px;
+  }
+
+  .tpl-unsubscribe#unsubscribe3 .tpl-unsubscribe-data {
+    padding-bottom: 47px;
+  }
+
+  .tpl-unsubscribe#unsubscribe3 .tpl-unsubscribe-data__title {
+    margin-bottom: 20px;
+  }
+
+  .tpl-unsubscribe#unsubscribe4 .tpl-unsubscribe-data {
+    padding-bottom: 46px;
+  }
+
+  .tpl-unsubscribe#unsubscribe4 .tpl-unsubscribe-data__form {
+    margin-top: 38px;
+  }
+
   .tpl-unsubscribe#unsubscribe4 .tpl-unsubscribe-data__btn {
     margin-top: 48px;
   }
@@ -525,6 +579,16 @@
     font-size: 30px;
     line-height: 120%;
     color: #161D35;
+  }
+
+  .tpl-unsubscribe__img {
+    max-width: 324px;
+    max-height: 324px;
+    margin-top: 46px;
+  }
+
+  .tpl-unsubscribe__data .tpl-unsubscribe__title {
+    margin-bottom: 15px;
   }
 
   .tpl-unsubscribe-data {
@@ -543,7 +607,7 @@
 
   .tpl-unsubscribe-data__info {
     font-size: 14px;
-    padding: 12px 16px;
+    padding: 9px 16px;
   }
 
   .tpl-unsubscribe-data__form {
@@ -551,6 +615,11 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: 34px;
+  }
+
+  .tpl-unsubscribe-data__success {
+    margin-top: 20px;
   }
 
   .tpl-unsubscribe-form__row {
@@ -562,5 +631,9 @@
 
   .tpl-unsubscribe-form__row .tpl-form-group {
     margin-bottom: 20px;
+  }
+
+  .tpl-unsubscribe-form__timer {
+    margin-top: -4px;
   }
 }

@@ -289,7 +289,7 @@
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 56px;
-  padding-bottom: 90px;
+  padding-bottom: 88px;
 }
 
 .tpl .tpl-steps .tpl-steps-progress {
@@ -332,6 +332,7 @@
 .tpl .tpl-steps__form {
   max-width: 670px;
   width: 100%;
+  padding-top: 5px;
 }
 
 .tpl .tpl-steps__info {
@@ -512,11 +513,12 @@
   }
 
   .tpl .tpl-steps .tpl-form__buttons {
-    margin-top: 30px;
+    margin-top: 27px;
   }
 
   .tpl .tpl-steps__form {
     margin-top: 27px;
+    padding-top: 0;
   }
 
   .tpl .tpl-steps__title {
@@ -533,6 +535,12 @@
 
   .tpl .tpl-steps-form__title {
     font-size: 24px;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
+    max-width: 246px;
+    width: 100%;
+  }
+
+  .tpl .tpl-steps-form__notice {
+    margin-top: 23px;
   }
 }

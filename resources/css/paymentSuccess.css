@@ -285,11 +285,6 @@
   border-radius: 10px;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 .tpl-phone-success {
   padding-top: 56px;
   padding-bottom: 88px;
@@ -344,6 +339,12 @@
      object-fit: contain;
 }
 
+.tpl-phone-success__data {
+  min-width: 500px;
+  max-width: 670px;
+  width: 100%;
+}
+
 .tpl-phone-success__data .tpl-phone-success__title {
   display: none;
 }
@@ -353,13 +354,12 @@
 }
 
 .tpl-phone-data {
-  min-width: 500px;
-  max-width: 670px;
-  width: 100%;
-  padding-top: 40px;
+  padding-top: 37px;
   padding-left: 36px;
   padding-right: 36px;
   padding-bottom: 64px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   -webkit-box-shadow: 0px 12px 25px -1px rgba(61, 109, 201, 0.12);
           box-shadow: 0px 12px 25px -1px rgba(61, 109, 201, 0.12);
   border-radius: 0px 0px 15px 15px;
@@ -370,13 +370,17 @@
   font-size: 30px;
   line-height: 120%;
   color: #484E63;
+  max-width: 423px;
+  width: 100%;
 }
 
 .tpl-phone-data__info {
   background-color: #E6F4F9;
   border-radius: 15px;
   padding: 20px;
-  margin-top: 16px;
+  margin-top: 17px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .tpl-phone-data__form {
@@ -436,11 +440,14 @@
   font-size: 16px;
   line-height: 140%;
   color: #1A87D8;
-  margin-top: 16px;
+  margin-top: 20px;
   margin-bottom: 40px;
 }
 
 .tpl-phone-data__notice svg {
+  min-width: 33px;
+  width: 33px;
+  height: 33px;
   margin-right: 12px;
 }
 
@@ -470,6 +477,11 @@
   .tpl-phone-success__img {
     margin: auto;
     margin-top: 24px;
+  }
+
+  .tpl-phone-success__data {
+    min-width: unset;
+    max-width: 100%;
   }
 
   .tpl-phone-success__data .tpl-phone-success__title {
@@ -513,7 +525,7 @@
   }
 
   .tpl-phone-data {
-    padding-top: 32px;
+    padding-top: 30px;
     padding-left: 16px;
     padding-right: 16px;
     padding-bottom: 48px;
@@ -521,11 +533,13 @@
 
   .tpl-phone-data__title {
     font-size: 24px;
+    max-width: 290px;
   }
 
   .tpl-phone-data__info {
     font-size: 14px;
-    padding: 8px 15px;
+    padding: 8px 16px;
+    margin-top: 20px;
   }
 
   .tpl-phone-data__form {
@@ -541,7 +555,13 @@
 
   .tpl-phone-data__notice {
     font-weight: 600;
-    margin-top: 22px;
+    margin-top: 19px;
     margin-bottom: 36px;
+  }
+
+  .tpl-phone-data__notice svg {
+    width: 27px;
+    height: 27px;
+    min-width: 27px;
   }
 }
