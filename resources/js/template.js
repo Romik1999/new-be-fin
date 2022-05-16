@@ -18,6 +18,24 @@ $(document).ready(function () {
         }
     });
 
+    $(".tpl-faq-item__icon").click(function () {
+        if ($(this).hasClass("active")) {
+            $(this)
+                .removeClass("active")
+                .siblings(".tpl-faq-item__content").find('.tpl-faq-item__text').slideUp()
+                .siblings(".tpl-faq-item__title").removeClass("active")
+        } else {
+            $(this)
+                .addClass("active")
+                .siblings(".tpl-faq-item__content").find(".tpl-faq-item__text").slideDown()
+                .closest(".tpl-faq-item").find(".tpl-faq-item__title").addClass("active")
+                .closest(".tpl-faq__item").addClass("active")
+                .siblings(".tpl-faq__item.active").removeClass("active")
+                .find(".tpl-faq-item__text").slideUp()
+                .closest(".tpl-faq-item").find(".tpl-faq-item__icon").removeClass("active")
+        }
+    });
+
     const reviews = new Swiper('.tpl-reviews-slider', {
         slidesPerView: 2,
         spaceBetween: 30,

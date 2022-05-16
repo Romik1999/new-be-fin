@@ -21,7 +21,10 @@
   }
 
   &__main {
-    padding: 60px 15px;
+    padding-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 104px;
     box-sizing: border-box;
     width: 100%;
 
@@ -80,7 +83,7 @@
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     grid-template-rows: auto;
     grid-column-gap: 30px;
-    grid-row-gap: 40px;
+    grid-row-gap: 38px;
     box-sizing: border-box;
 
     @media screen and (max-width: 575px) {
@@ -111,22 +114,12 @@
     justify-content: flex-end;
 
     &__label {
-      background: -o-linear-gradient(357.08deg, #1ed372 0, #16c8d3 100%);
-      background: linear-gradient(92.92deg, #1ed372 0, #16c8d3 100%);
-      -webkit-box-shadow: 0 6px 22px rgb(0 206 106 / 35%);
-      box-shadow: 0 6px 22px rgb(0 206 106 / 35%);
-      color: $white;
-      border-radius: 7px 7px 0px 0px;
-      font-size: 14px;
-      line-height: 120%;
-      padding-top: 3px;
-      padding-left: 5px;
-      padding-right: 5px;
-      padding-bottom: 15px;
-      box-sizing: border-box;
-      width: 100%;
-      margin-bottom: -12px;
+      font-size: 12px;
+      line-height: 14px;
       text-align: center;
+      text-transform: uppercase;
+      color: #1A87D8;
+      margin-top: 4px;
 
       @media screen and (max-width: 575px) {
         font-size: 12px;
@@ -145,6 +138,17 @@
 
       @media screen and (max-width: 575px) {
         border-radius: 10px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+    }
+
+    &__top {
+      @media screen and (max-width: 575px) {
+        margin-top: 0;
+        margin-bottom: auto;
       }
     }
 
@@ -164,11 +168,12 @@
     }
 
     &__props {
-      margin-top: 30px;
-      margin-bottom: 8px;
+      margin-top: 12px;
+      margin-bottom: 12px;
 
       @media screen and (max-width: 575px) {
-        margin-top: 20px;
+        margin-top: 4px;
+        margin-bottom: 11px;
       }
     }
 
@@ -202,9 +207,22 @@
 .tpl-offer-prop {
   width: 100%;
   border-top: 1px solid #A3A5B1;
-  padding: 16px 0;
   text-align: center;
   box-sizing: border-box;
+
+  &:nth-child(1) {
+    padding: 16px 0;
+    @media screen and (max-width: 575px) {
+      padding: 8px 0;
+    }
+  }
+
+  &:nth-child(2) {
+    padding: 12px 0;
+    @media screen and (max-width: 575px) {
+      padding: 6px 0;
+    }
+  }
 
   @media screen and (max-width: 575px) {
     border-top: none;

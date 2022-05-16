@@ -89,9 +89,9 @@
 
   &__bottom {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
-    margin-top: 53px;
+    margin-top: 55px;
     column-gap: 32px;
 
     @media screen and (max-width: 990px) {
@@ -111,16 +111,22 @@
     }
   }
 
+  &__percentages {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+  }
+
   &__percentage {
     display: flex;
     align-items: center;
 
     @media screen and (max-width: 575px) {
-     justify-content: space-between;
+      justify-content: space-between;
       width: 100%;
     }
 
-    &:not(:last-child){
+    &:not(:last-child) {
       @media screen and (max-width: 575px) {
         margin-bottom: 15px;
       }
@@ -142,6 +148,12 @@
         font-size: 40px;
         line-height: 47px;
         color: $grey-dark;
+      }
+    }
+
+    &_bid{
+      & span:first-child {
+        max-width: 110px;
       }
     }
   }

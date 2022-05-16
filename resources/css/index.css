@@ -117,16 +117,28 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 53px;
+  margin-top: 55px;
   -webkit-column-gap: 32px;
      -moz-column-gap: 32px;
           column-gap: 32px;
+}
+
+.tpl-calc-form__percentages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 50px;
+     -moz-column-gap: 50px;
+          column-gap: 50px;
 }
 
 .tpl-calc-form__percentage {
@@ -155,6 +167,10 @@
   font-size: 40px;
   line-height: 47px;
   color: #484E63;
+}
+
+.tpl-calc-form__percentage_bid span:first-child {
+  max-width: 110px;
 }
 
 .rangeslider {
