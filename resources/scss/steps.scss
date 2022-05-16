@@ -24,8 +24,30 @@
       width: 50%;
     }
 
-    &#step2 .tpl-steps-progress__fill {
-      width: 75%;
+    &#step2 {
+      & .tpl-steps-progress__fill {
+        width: 75%;
+      }
+
+      & .tpl-form__buttons {
+        display: flex;
+        align-items: center;
+        column-gap: 30px;
+
+        @media screen and (max-width: 575px) {
+          flex-direction: column-reverse;
+        }
+      }
+
+      & .tpl-btn {
+        width: 100%;
+
+        &:nth-child(2) {
+          @media screen and (max-width: 575px) {
+            margin-bottom: 20px;
+          }
+        }
+      }
     }
 
     &#step3 .tpl-steps-progress__fill {

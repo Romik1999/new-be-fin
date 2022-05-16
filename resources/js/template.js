@@ -97,11 +97,26 @@ $(document).ready(function () {
             clearInterval(int);
         }
     }, 1000);
-    //
-    // $('#form-amount-control').on('input', function (e) {
-    //     $('#confirmationform-amount').val($('#form-amount-control').val());
-    // }
+
     $('#confirmationform-amount').val($('#form-amount-control').val());
+
+    // $('#form-amount-control').on('input', function (e) {
+    //     let input = $('#form-amount-control');
+    //     let minAmount = input.attr('min');
+    //     let maxAmount = input.attr('max');
+    //     let currentVal = Number(input.val().replace(" ", ""));
+    //
+    //     if (currentVal > maxAmount){
+    //         input.val(maxAmount.toLocaleString('en-US').replace(",", " "));
+    //         $('#confirmationform-amount').val(maxAmount);
+    //     }
+    //     if (currentVal < minAmount){
+    //         input.val(minAmount.toLocaleString('en-US').replace(",", " "));
+    //         $('#confirmationform-amount').val(minAmount);
+    //     }
+    //     input.trigger('change');
+    // });
+
     $('.tpl-form-group__btn').on('click', function (e) {
         let input = $('#form-amount-control');
         let stepAmount = input.attr('step');
@@ -120,6 +135,7 @@ $(document).ready(function () {
             input.trigger('change');
         }
     });
+
 });
 
 

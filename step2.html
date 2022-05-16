@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="resources/lib/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="resources/css/policy-checkbox.min.css"/>
     <link rel="stylesheet" href="resources/css/template.min.css"/>
-    <link rel="stylesheet" href="resources/css/confirmation.min.css"/>
-    <title>Confirmation</title>
+    <link rel="stylesheet" href="resources/css/steps.min.css"/>
+    <title>Step2</title>
 </head>
 <body>
 
@@ -40,13 +40,13 @@
     </div>
 </header>
     <main class="tpl-main">
-        <section class="tpl-confirmation">
+        <section class="tpl-steps" id="step2">
             <div class="tpl-cont">
-                <div class="tpl-confirmation__wrapper">
-                    <div class="tpl-confirmation__info">
-                        <div class="tpl-confirmation__title"><p>До подачи заявки осталось <span
-                                style="color: #1A87D8;">3 шага</span></p></div>
-                        <div class="tpl-confirmation__image">
+                <div class="tpl-steps__wrapper">
+                    <div class="tpl-steps__info">
+                        <div class="tpl-steps__title"><p>До подачи заявки остался<span
+                                style="color: #1A87D8;">1 шаг</span></p></div>
+                        <div class="tpl-steps__image">
                             <svg width="370" height="370" viewBox="0 0 370 370" fill="none"
                                  xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_1960_7109)">
@@ -626,100 +626,63 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="tpl-confirmation__form">
-                        <div class="tpl-confirmation-form">
+                    <div class="tpl-steps__form">
+                        <div class="tpl-steps-form">
                             <div class="tpl-steps-progress">
     <div class="tpl-steps-progress__fill"></div>
 </div>
-                            <div class="tpl-confirmation-form__wrapper">
-                                <div class="tpl-confirmation-form__title">
+                            <div class="tpl-steps-form__wrapper">
+                                <div class="tpl-steps-form__title">
                                     <p>Заполните анкету для получения денег</p>
                                 </div>
-                                <div class="tpl-confirmation-form__text">
-                                    <p>Заём до 50 000 для новых клиентов под 0%</p>
-                                </div>
-
-                                <form id="w0" class="tpl-form tpl-form-calc" action="" method="post" data-selector-prefix="tpl-form-calc">
-                                    <div class="tpl-form-group tpl-form-group_amount">
-                                        <div class="tpl-form-group__wrapper">
-                                            <input type="hidden" id="confirmationform-amount" class="form-control" name="IndexForm[amount]" value="18000">
-                                            <input
-                                                    id="form-amount-control"
-                                                    class="tpl-form-group__input"
-                                                    value="18 000"
-                                                    step="1000"
-                                                    min="1000"
-                                                    max="100000">
-                                            <div class="tpl-form-group__btn tpl-form-group__btn_minus"></div>
-                                            <div class="tpl-form-group__btn tpl-form-group__btn_plus"></div>
-                                        </div>
-                                    </div>
+                                <form id="w0" class="tpl-form" action="" method="post">
                                     <div class="tpl-form-group">
-                                        <label class="tpl-form-group__label">
-                                            Фамилия Имя Отчество
-                                            <input type="text" class="tpl-form-group__input"
-                                                   name="ConfirmationForm[fullName]" placeholder="Иванов Петр Иванович"
-                                                   aria-required="true">
+                                        <label class="tpl-form-group__label field-stepsform-passportseriesnumber required">
+                                            Серия и номер
+                                            <input type="tel" id="stepsform-passportseriesnumber"
+                                                   class="no_tel tpl-form-group__input"
+                                                   name="StepsForm[passportSeriesNumber]" placeholder="1234 123456"
+                                                   aria-required="true" im-insert="true">
                                         </label>
                                     </div>
                                     <div class="tpl-form-row">
-                                        <div class="tpl-form-group">
-                                            <label class="tpl-form-group__label">
-                                                Телефон
-                                                <input type="tel" class="tpl-form-group__input"
-                                                       name="ConfirmationForm[fullName]"
-                                                       placeholder="+7 (999) 999 99 99"
-                                                       onkeypress="maskPhone(event)"
-                                                       onpaste="onPastePhone(event)">
+                                        <div class="tpl-form-group field-formsteps-passport_issued_date">
+                                            <label class="tpl-form-group__label field-stepsform-passportissueddate required">
+                                                Дата выдачи
+                                                <input type="tel" id="stepsform-passportissueddate"
+                                                       class="no_tel tpl-form-group__input"
+                                                       name="StepsForm[passportIssuedDate]" placeholder="дд/мм/гг"
+                                                       aria-required="true" im-insert="true">
                                             </label>
                                         </div>
-                                        <div class="tpl-form-group">
-                                            <label class="tpl-form-group__label">
-                                                Электронная почта
-                                                <input type="text" class="tpl-form-group__input"
-                                                       name="ConfirmationForm[fullName]" placeholder="Ваш e-mail">
+
+                                        <div class="tpl-form-group col-w-50 field-formsteps-passport_issued_code">
+                                            <label class="tpl-form-group__label field-stepsform-passportissuedcode required">
+                                                Код подразделения
+                                                <input type="tel" id="stepsform-passportissuedcode"
+                                                       class="no_tel tpl-form-group__input"
+                                                       name="StepsForm[passportIssuedCode]" placeholder="123-123"
+                                                       aria-required="true" im-insert="true">
                                             </label>
                                         </div>
                                     </div>
-                                    <div class="tpl-form__checkboxes">
-                                        <label class="tpl-input-label field-confirmationform-agreepolicy required">
-                                            <input type="hidden" name="ConfirmationForm[agreePolicy]" value="0"><label
-                                                class="tpl-checkbox__label"><input type="checkbox"
-                                                                                   id="confirmationform-agreepolicy"
-                                                                                   class="tpl-checkbox"
-                                                                                   name="ConfirmationForm[agreePolicy]"
-                                                                                   value="1" checked="">
-                                            <span class="tpl-checkbox__sign"></span>
-                                            <span>
-                                                Я согласен с <a class="tpl-checkbox__label-link" href="#" data-fancybox="" data-type="html" data-width="900" data-height="1000" data-src="">публичной офертой</a>,  даю согласие на <a class="tpl-checkbox__label-link" href="#" data-fancybox="" data-type="html" data-width="900" data-height="1000" data-src="">обработку персональных данных</a> и даю согласие на <a class="tpl-checkbox__label-link" href="#" data-fancybox="" data-type="html" data-width="900" data-height="1000" data-src="">передачу данных третьим лицам.</a>
-                                            </span>
-                                        </label>
-                                            <span class="tpl-input-label__error-text"></span>
-                                        </label>
-                                        <label class="tpl-input-label field-confirmationform-agreemailings required">
-                                            <input type="hidden" name="ConfirmationForm[agreeMailings]" value="0"><label
-                                                class="tpl-checkbox__label"><input type="checkbox"
-                                                                                   id="confirmationform-agreemailings"
-                                                                                   class="tpl-checkbox"
-                                                                                   name="ConfirmationForm[agreeMailings]"
-                                                                                   value="1" checked="">
-                                            <span class="tpl-checkbox__sign"></span>
-                                            <span>
-                                                Я согласен на получение
-                                                <a
-                                                class="tpl-checkbox__label-link" href="#" data-fancybox="" data-type="html" data-width="900" data-height="1000" data-src="">
-                                                    рекламных материалов.
-                                                </a>
-                                            </span>
-                                        </label>
+                                    <div class="tpl-form-group">
+                                        <label class="tpl-form-group__label field-stepsform-passportissued required">
+                                            Кем выдан
+                                            <input type="text" id="stepsform-passportissued"
+                                                   class="tpl-form-group__input"
+                                                   name="StepsForm[passportIssued]"
+                                                   placeholder="Отделом УФМС в хххх области в ххх районе"
+                                                   aria-required="true">
                                         </label>
                                     </div>
                                     <div class="tpl-form__buttons">
-                                        <button type="submit" class="tpl-form-submit">Продолжить</button>
+                                        <a class="tpl-btn tpl-btn_grey tpl-btn-back" href="#">Назад</a>
+                                        <button type="submit" class="tpl-btn tpl-btn_green tpl-btn-submit">Оформить страховку</button>
                                     </div>
                                 </form>
 
-                                <div class="tpl-confirmation-form__notice">
+                                <div class="tpl-steps-form__notice">
                                     Внимание! Вносите только достоверную информацию, так как ложные данные могут стать
                                     причиной для отказа в получении средств.
                                 </div>
