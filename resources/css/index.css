@@ -141,6 +141,13 @@
           column-gap: 50px;
 }
 
+@media screen and (max-width: 575px) {
+    .tpl-calc-form__percentages {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
 .tpl-calc-form__percentage {
   display: -webkit-box;
   display: -ms-flexbox;
