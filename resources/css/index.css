@@ -920,6 +920,11 @@
   line-height: 160%;
 }
 
+.tpl-about__text * {
+  margin: 0;
+  padding: 0;
+}
+
 @media screen and (max-width: 1360px) {
   .tpl-reviews__arrow_next {
     right: -48px;

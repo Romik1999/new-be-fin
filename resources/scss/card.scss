@@ -48,7 +48,7 @@
       padding-left: 30px;
     }
 
-    &:after{
+    &:after {
       content: '';
       position: absolute;
       top: 0;
@@ -63,6 +63,7 @@
         display: none;
       }
     }
+
     @media screen and (max-width: 990px) {
       width: 100%;
       border: none;
@@ -179,18 +180,30 @@
   }
 
   &__phone {
-    margin-top: 40px;
+    margin-top: 44px;
 
     @media screen and (max-width: 575px) {
-      margin-top: 34px;
+      margin-top: 45px;
     }
   }
 
   &__total {
-    margin-top: 56px;
+    margin-top: 50px;
 
     @media screen and (max-width: 575px) {
       margin-top: 31px;
+    }
+  }
+
+  &__alert {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FF0000;
+    margin-top: 18px;
+
+    @media screen and (max-width: 575px) {
+      margin-top: 24px;
     }
   }
 
@@ -198,12 +211,12 @@
     font-size: 18px;
     line-height: 140%;
     color: $grey-dark;
-    margin-top: 52px;
+    margin-top: 10px;
     max-width: 577px;
     width: 100%;
 
     @media screen and (max-width: 575px) {
-      margin-top: 24px;
+      margin-top: 11px;
     }
   }
 }
@@ -269,6 +282,15 @@
   &__inner {
     display: flex;
     align-items: center;
+    position: relative;
+
+    & svg {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 19px;
+      z-index: 2;
+    }
   }
 
   &__input {
@@ -282,6 +304,10 @@
     font-size: 18px;
     line-height: 140%;
     color: $black;
+
+    @media screen and (max-width: 575px) {
+      max-width: 275px;
+    }
 
     &::placeholder {
       font-family: 'Roboto';
@@ -377,11 +403,15 @@
   }
 
   &__item {
-    max-width: 100px;
-    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAFCFE;
 
-    & > * {
+    & img {
+      max-width: 100px;
       width: 100%;
+      max-height: 55px;
       height: 100%;
       object-fit: contain;
     }

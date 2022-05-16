@@ -91,7 +91,7 @@ $(document).ready(function () {
 
 
     var _Seconds = $('.tpl-timer span').text(), int;
-    int = setInterval(function() {
+    int = setInterval(function () {
         if (_Seconds > 0) {
             _Seconds--;
             $('.tpl-timer span').text(_Seconds);
@@ -99,7 +99,31 @@ $(document).ready(function () {
             clearInterval(int);
         }
     }, 1000);
+    //
+    // $('#form-amount-control').on('input', function (e) {
+    //     $('#confirmationform-amount').val($('#form-amount-control').val());
+    // }
+    $('#confirmationform-amount').val($('#form-amount-control').val());
+    $('.tpl-form-group__btn').on('click', function (e) {
+        let input = $('#form-amount-control');
+        let stepAmount = input.attr('step');
+        let minAmount = input.attr('min');
+        let maxAmount = input.attr('max');
+
+        let currentVal = Number(input.val().replace(" ", ""));
+        if ($(this).is('.tpl-form-group__btn_minus')) {
+            currentVal -= Number(stepAmount);
+        } else if ($(this).is('.tpl-form-group__btn_plus')) {
+            currentVal += Number(stepAmount);
+        }
+        if (currentVal <= maxAmount && currentVal >= minAmount){
+            input.val(currentVal.toLocaleString('en-US').replace(",", " "));
+            $('#confirmationform-amount').val(currentVal);
+            input.trigger('change');
+        }
+    });
 });
+
 
 function maskPhone(e) {
     const mask = /\+7 \(\d{3}\) \d{3} \d{2} \d{2}/;
