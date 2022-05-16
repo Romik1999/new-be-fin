@@ -27,7 +27,7 @@
   &__wrapper {
     display: flex;
     align-items: flex-start;
-    column-gap: 40px;
+    column-gap: 30px;
     margin-top: 40px;
 
     @media screen and (max-width: 575px) {
@@ -77,6 +77,10 @@
       height: 100%;
       z-index: -1;
       background-color: #FAFCFE;
+
+      @media screen and (max-width: 575px) {
+        width: 44px;
+      }
     }
 
     &__title {
@@ -92,7 +96,8 @@
 
       @media screen and (max-width: 575px) {
         font-size: 18px;
-        padding: 0 12px;
+        padding-left: 56px;
+        padding-right: 12px;
       }
 
 
@@ -101,6 +106,10 @@
         position: absolute;
         top: calc(50% - 12px);
         left: 20px;
+
+        @media screen and (max-width: 575px) {
+          left: 12px;
+        }
       }
 
       &.active {
@@ -124,7 +133,8 @@
       display: none;
 
       @media screen and (max-width: 575px) {
-        padding: 0 12px;
+        padding-left: 56px;
+        padding-right: 12px;
       }
     }
   }

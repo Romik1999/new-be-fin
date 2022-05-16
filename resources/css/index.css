@@ -674,9 +674,9 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-column-gap: 40px;
-     -moz-column-gap: 40px;
-          column-gap: 40px;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
   margin-top: 40px;
 }
 
@@ -1324,13 +1324,23 @@
     margin-top: 28px;
   }
 
+  .tpl-faq-item:before {
+    width: 44px;
+  }
+
   .tpl-faq-item__title {
     font-size: 18px;
-    padding: 0 12px;
+    padding-left: 56px;
+    padding-right: 12px;
+  }
+
+  .tpl-faq-item__title svg {
+    left: 12px;
   }
 
   .tpl-faq-item__text {
-    padding: 0 12px;
+    padding-left: 56px;
+    padding-right: 12px;
   }
 
   .tpl-reviews__title {
