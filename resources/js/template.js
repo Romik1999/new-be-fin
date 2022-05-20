@@ -98,7 +98,7 @@ $(document).ready(function () {
             clearInterval(int);
         }
         if (_Seconds === 0) {
-            $('.tpl-unsubscribe-form__action_repeat').fadeIn();
+            $('.tpl-timer_repeat').fadeIn();
             $('.tpl-timer').fadeOut();
         }
     }, 1000);

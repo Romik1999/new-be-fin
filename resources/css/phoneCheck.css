@@ -422,13 +422,25 @@
   font-weight: 600;
 }
 
+.tpl-phone-data__actions {
+  margin-top: 8px;
+}
+
 .tpl-phone-data__action {
   display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 140%;
   color: #1A87D8;
-  margin-top: 8px;
+  cursor: pointer;
+}
+
+.tpl-phone-data__action:hover {
+  text-decoration: underline;
+}
+
+.tpl-timer_repeat {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -532,7 +544,7 @@
     margin-top: 27px;
   }
 
-  .tpl-phone-data__action {
+  .tpl-phone-data__actions {
     margin-top: 4px;
   }
 }

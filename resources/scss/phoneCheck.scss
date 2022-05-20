@@ -203,16 +203,29 @@
     }
   }
 
-  &__action {
-    display: block;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 140%;
-    color: $blue1;
+  &__actions {
     margin-top: 8px;
 
     @media screen and (max-width: 575px) {
       margin-top: 4px;
     }
   }
+
+  &__action {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: $blue1;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+.tpl-timer_repeat{
+  display: none;
 }

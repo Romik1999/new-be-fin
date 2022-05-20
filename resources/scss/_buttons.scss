@@ -24,6 +24,8 @@
   }
 
   &:disabled {
+    background: #c3c4ca;
+    box-shadow: none;
     cursor: not-allowed;
 
     &:hover {

@@ -140,6 +140,9 @@ body {
 }
 
 .tpl .tpl-btn:disabled {
+  background: #c3c4ca;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   cursor: not-allowed;
 }
 

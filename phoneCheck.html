@@ -348,18 +348,21 @@
                                     <div class="tpl-form-group">
                                         <label class="tpl-form-group__label">
                                             Пароль из СМС
-                                            <input type="text" class="tpl-form-group__input" name="pass"
-                                                   aria-required="true">
+                                            <input type="password" id="pass" class="tpl-form-group__input" name="pass"
+                                                   aria-required="true" maxlength="4">
                                         </label>
                                     </div>
                                     <div class="tpl-phone-data__timer tpl-timer">
                                         До повторной отправки кода:<br>
-                                        <span>38</span> сек
+                                        <span>60</span> сек
                                     </div>
-                                    <a class="tpl-phone-data__action">Указать другой телефон</a>
+                                    <div class="tpl-phone-data__actions">
+                                        <a class="tpl-phone-data__action tpl-phone-data__action_change">Изменить номер телефона</a>
+                                        <a class="tpl-phone-data__action tpl-phone-data__action_repeat tpl-timer_repeat">Выслать код повторно</a>
+                                    </div>
                                 </div>
                                 <div class="tpl-phone-data__right">
-                                    <button class="tpl-btn tpl-btn_green tpl-phone-data__button" type="submit">Продолжить</button>
+                                    <button class="tpl-btn tpl-btn_green tpl-phone-data__button" type="submit" disabled>Продолжить</button>
                                 </div>
                             </form>
                         </div>
