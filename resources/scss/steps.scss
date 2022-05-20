@@ -33,6 +33,7 @@
         display: flex;
         align-items: center;
         column-gap: 30px;
+        margin-top: 16px;
 
         @media screen and (max-width: 575px) {
           flex-direction: column-reverse;
@@ -55,10 +56,10 @@
     }
 
     & .tpl-form__buttons {
-      margin-top: 16px;
+      margin-top: 36px;
 
       @media screen and (max-width: 575px) {
-        margin-top: 10px;
+        margin-top: 28px;
       }
     }
 

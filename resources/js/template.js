@@ -139,8 +139,6 @@ $(document).ready(function () {
             clearInterval(ints);
         }
     }, 48);
-
-    $('input[type="hidden"]').closest('.tpl-form-group').addClass('tpl-form-group_hidden');
 });
 
 

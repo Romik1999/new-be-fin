@@ -321,6 +321,7 @@
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
+  margin-top: 16px;
 }
 
 .tpl .tpl-steps#step2 .tpl-btn {
@@ -332,7 +333,7 @@
 }
 
 .tpl .tpl-steps .tpl-form__buttons {
-  margin-top: 16px;
+  margin-top: 36px;
 }
 
 .tpl .tpl-steps__wrapper {
@@ -545,7 +546,7 @@
   }
 
   .tpl .tpl-steps .tpl-form__buttons {
-    margin-top: 10px;
+    margin-top: 28px;
   }
 
   .tpl .tpl-steps__form {
