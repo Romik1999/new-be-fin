@@ -565,6 +565,11 @@
   color: #A3A5B1;
 }
 
+.tpl-card-field__input:focus {
+  outline: none;
+  border: 1px solid #1a87d8;
+}
+
 .tpl-card-field__actions {
   display: -webkit-box;
   display: -ms-flexbox;

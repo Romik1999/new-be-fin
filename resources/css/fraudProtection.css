@@ -501,6 +501,11 @@
   color: #A3A5B1;
 }
 
+.tpl-protection-field__input:focus {
+  outline: none;
+  border: 1px solid #1A87D8;
+}
+
 .tpl-protection-field__actions {
   display: -webkit-box;
   display: -ms-flexbox;

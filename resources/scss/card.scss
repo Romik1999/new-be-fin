@@ -317,6 +317,11 @@
       line-height: 140%;
       color: $grey;
     }
+
+    &:focus{
+      outline: none;
+      border: 1px solid #1a87d8;
+    }
   }
 
   &__actions {
