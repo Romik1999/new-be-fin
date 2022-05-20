@@ -93,10 +93,19 @@ $(document).ready(function () {
         if (_Seconds > 0) {
             _Seconds--;
             $('.tpl-timer span').text(_Seconds);
-        } else {
+        }
+        else {
             clearInterval(int);
         }
+        if (_Seconds === 0) {
+            $('.tpl-unsubscribe-form__action_repeat').fadeIn();
+            $('.tpl-timer').fadeOut();
+        }
     }, 1000);
+
+    $("#pass").keyup(function(){
+        $("button").attr('disabled', $(this).val().length < 4);
+    });
 
     $('#confirmationform-amount').val($('#form-amount-control').val());
 
@@ -130,6 +139,8 @@ $(document).ready(function () {
             clearInterval(ints);
         }
     }, 48);
+
+    $('input[type="hidden"]').closest('.tpl-form-group').addClass('tpl-form-group_hidden');
 });
 
 

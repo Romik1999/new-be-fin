@@ -15,6 +15,11 @@
   margin-bottom: 20px;
 }
 
+.tpl .tpl-form-group_hidden {
+  margin: 0;
+  padding: 0;
+}
+
 .tpl .tpl-form-group_amount .tpl-form-group__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -287,7 +292,7 @@
 
 .tpl-data-check {
   padding-top: 64px;
-  padding-bottom: 104px;
+  padding-bottom: 100px;
 }
 
 .tpl-data-check__wrapper {
@@ -297,14 +302,17 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
 }
 
 .tpl-data-check__image svg {
-  max-width: 370px;
-  max-height: 370px;
+  max-width: 400px;
+  max-height: 400px;
   width: 100%;
 }
 
@@ -497,5 +505,9 @@
   .tpl-data-check__text {
     font-size: 18px;
     margin-top: 20px;
+  }
+
+  .tpl-animation__top {
+    margin-bottom: 18px;
   }
 }

@@ -139,6 +139,15 @@ body {
   border: none;
 }
 
+.tpl .tpl-btn:disabled {
+  cursor: not-allowed;
+}
+
+.tpl .tpl-btn:disabled:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .tpl .tpl-btn_green {
   background: -o-linear-gradient(357.08deg, #1ED372 0%, #16C8D3 100%);
   background: linear-gradient(92.92deg, #1ED372 0%, #16C8D3 100%);

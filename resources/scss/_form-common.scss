@@ -15,6 +15,11 @@
     width: 100%;
     margin-bottom: 20px;
 
+    &_hidden{
+      margin: 0;
+      padding: 0;
+    }
+
     &_amount {
       & .tpl-form-group__wrapper {
         display: flex;

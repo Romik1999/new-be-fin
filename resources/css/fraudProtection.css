@@ -15,6 +15,11 @@
   margin-bottom: 20px;
 }
 
+.tpl .tpl-form-group_hidden {
+  margin: 0;
+  padding: 0;
+}
+
 .tpl .tpl-form-group_amount .tpl-form-group__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -320,7 +325,7 @@
   padding: 20px;
   background-color: #E6F4F9;
   border-radius: 15px;
-  margin-top: 32px;
+  margin-top: 33px;
   font-size: 18px;
   line-height: 140%;
   color: #484E63;
@@ -346,13 +351,13 @@
 }
 
 .tpl-protection-content__phone {
-  margin-top: 36px;
+  margin-top: 44px;
 }
 
 .tpl-protection-content__total {
   max-width: 630px;
   width: 100%;
-  margin-top: 56px;
+  margin-top: 52px;
 }
 
 .tpl-protection-content__notice {
@@ -361,7 +366,7 @@
   font-size: 18px;
   line-height: 140%;
   color: #484E63;
-  margin-top: 52px;
+  margin-top: 50px;
 }
 
 .tpl-protection-info__title {

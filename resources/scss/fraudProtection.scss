@@ -39,7 +39,7 @@
     padding: 20px;
     background-color: #E6F4F9;
     border-radius: 15px;
-    margin-top: 32px;
+    margin-top: 33px;
 
     font-size: 18px;
     line-height: 140%;
@@ -76,13 +76,13 @@
   }
 
   &__phone{
-    margin-top: 36px;
+    margin-top: 44px;
   }
 
   &__total{
     max-width: 630px;
     width: 100%;
-    margin-top: 56px;
+    margin-top: 52px;
 
     @media screen and (max-width: 575px) {
      margin-top: 32px;
@@ -95,7 +95,7 @@
     font-size: 18px;
     line-height: 140%;
     color: $grey-dark;
-    margin-top: 52px;
+    margin-top: 50px;
 
     @media screen and (max-width: 575px) {
       margin-top: 56px;

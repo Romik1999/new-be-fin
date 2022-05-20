@@ -23,6 +23,14 @@
     width: 100%;
   }
 
+  &:disabled {
+    cursor: not-allowed;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
   &_green {
     background: linear-gradient(92.92deg, #1ED372 0%, #16C8D3 100%);
     box-shadow: 0px 6px 22px rgba(0, 206, 106, 0.35);
@@ -31,6 +39,7 @@
     &:hover {
       box-shadow: 0px 8px 21px rgba(30, 211, 114, 0.6);
     }
+
   }
 
   &_grey {

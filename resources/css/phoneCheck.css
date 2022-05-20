@@ -15,6 +15,11 @@
   margin-bottom: 20px;
 }
 
+.tpl .tpl-form-group_hidden {
+  margin: 0;
+  padding: 0;
+}
+
 .tpl .tpl-form-group_amount .tpl-form-group__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

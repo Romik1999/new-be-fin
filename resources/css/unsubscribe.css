@@ -15,6 +15,11 @@
   margin-bottom: 20px;
 }
 
+.tpl .tpl-form-group_hidden {
+  margin: 0;
+  padding: 0;
+}
+
 .tpl .tpl-form-group_amount .tpl-form-group__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -316,7 +321,7 @@
 }
 
 .tpl-unsubscribe#unsubscribe4 .tpl-unsubscribe-data__btn {
-  margin-top: 53px;
+  margin-top: 36px;
 }
 
 .tpl-unsubscribe__wrapper {
@@ -385,7 +390,7 @@
 .tpl-unsubscribe-data {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  min-height: 354px;
+  min-height: 330px;
   width: 100%;
   padding-top: 62px;
   padding-left: 36px;
@@ -463,17 +468,35 @@
   font-weight: 600;
 }
 
+.tpl-unsubscribe-form__actions {
+  margin-top: 8px;
+}
+
 .tpl-unsubscribe-form__action {
   font-weight: 500;
   font-size: 14px;
   line-height: 140%;
   color: #1A87D8;
   display: block;
-  margin-top: 8px;
+  cursor: pointer;
 }
 
-.tpl-unsubscribe-form__btn {
+.tpl-unsubscribe-form__action:hover {
+  text-decoration: underline;
+}
+
+.tpl-unsubscribe-form__action_repeat {
+  display: none;
+}
+
+.tpl-unsubscribe-form__button {
   min-width: 200px !important;
+}
+
+.tpl-unsubscribe-form__button:disabled {
+  background: #C3C4CA;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 @media screen and (max-width: 768px) {

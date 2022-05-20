@@ -91,7 +91,7 @@
     }
 
     & .tpl-unsubscribe-data__btn {
-      margin-top: 53px;
+      margin-top: 36px;
 
       @media screen and (max-width: 575px) {
         margin-top: 48px;
@@ -203,7 +203,7 @@
 
 .tpl-unsubscribe-data {
   box-sizing: border-box;
-  min-height: 354px;
+  min-height: 330px;
   width: 100%;
   padding-top: 62px;
   padding-left: 36px;
@@ -317,16 +317,33 @@
     }
   }
 
+  &__actions {
+    margin-top: 8px;
+  }
+
   &__action {
     font-weight: 500;
     font-size: 14px;
     line-height: 140%;
     color: $blue1;
     display: block;
-    margin-top: 8px;
+    cursor: pointer;
+
+    &:hover{
+      text-decoration: underline;
+    }
+
+    &_repeat{
+      display: none;
+    }
   }
 
-  &__btn {
+  &__button {
     min-width: 200px !important;
+
+    &:disabled {
+      background: #C3C4CA;
+      box-shadow: none;
+    }
   }
 }

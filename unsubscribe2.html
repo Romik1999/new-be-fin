@@ -337,7 +337,8 @@
                         <div class="tpl-unsubscribe-data">
                             <div class="tpl-unsubscribe-data__title">Подтверждение номера</div>
                             <div class="tpl-unsubscribe-data__info">
-                                На указанный вами телефон 8 (XXX) XXX-XX-XX отправлен<br> пароль, введите его в поле ниже.
+                                На указанный вами телефон 8 (XXX) XXX-XX-XX отправлен<br> пароль, введите его в поле
+                                ниже.
                             </div>
                             <div class="tpl-unsubscribe-data__form">
                                 <form class="tpl-unsubscribe-form" method="get">
@@ -346,18 +347,23 @@
                                             <div class="tpl-form-group">
                                                 <label class="tpl-form-group__label">
                                                     Пароль из СМС
-                                                    <input type="text" class="tpl-form-group__input" name="pass"
-                                                           aria-required="true">
+                                                    <input type="password" id="pass" class="tpl-form-group__input" name="pass"
+                                                           aria-required="true" maxlength="4">
                                                 </label>
                                             </div>
                                             <div class="tpl-unsubscribe-form__timer tpl-timer">
                                                 До повторной отправки кода:<br>
-                                                <span>38</span> сек
+                                                <span>60</span> сек
                                             </div>
-                                            <a class="tpl-unsubscribe-form__action">Указать другой телефон</a>
+                                            <div class="tpl-unsubscribe-form__actions">
+                                                <a class="tpl-unsubscribe-form__action tpl-unsubscribe-form__action_change">Изменить номер телефона</a>
+                                                <a class="tpl-unsubscribe-form__action tpl-unsubscribe-form__action_repeat">Выслать код повторно</a>
+                                            </div>
                                         </div>
                                         <button class="tpl-btn tpl-btn_green tpl-unsubscribe-form__button"
-                                            type="submit">Отписаться
+                                                type="submit"
+                                                disabled
+                                        >Отписаться
                                         </button>
                                     </div>
                                 </form>
@@ -398,8 +404,8 @@
             Сайт предлагает услугу по дополнительному страхованию клиентов по двум видам страховых рисков:
             <br>
             <br>
+            <p style="margin-bottom: 0">Несчастный случай</p>
             <ul>
-                <li>Несчастный случай</li>
                 <li>травмы, которые получены на производстве, в быту, при движении транспорта, от нападений
                     злоумышленников,
                     животных, в результате действия природных стихийных явлений и др.;
