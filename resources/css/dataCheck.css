@@ -444,6 +444,9 @@
   font-size: 22px;
   line-height: 140%;
   color: #1A87D8;
+  -webkit-column-gap: 4px;
+     -moz-column-gap: 4px;
+          column-gap: 4px;
 }
 
 .tpl-animation-progressbar {

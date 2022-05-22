@@ -320,7 +320,7 @@
   margin-top: 24px;
 }
 
-.tpl-unsubscribe#unsubscribe4 .tpl-unsubscribe-data__btn {
+.tpl-unsubscribe#unsubscribe4 .tpl-unsubscribe-data__button {
   margin-top: 36px;
 }
 
@@ -593,8 +593,8 @@
     margin-top: 38px;
   }
 
-  .tpl-unsubscribe#unsubscribe4 .tpl-unsubscribe-data__btn {
-    margin-top: 48px;
+  .tpl-unsubscribe#unsubscribe4 .tpl-unsubscribe-data__button {
+    margin-top: 32px;
   }
 
   .tpl-unsubscribe__title {

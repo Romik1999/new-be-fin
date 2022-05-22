@@ -445,8 +445,8 @@
   font-size: 16px;
   line-height: 140%;
   color: #1A87D8;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 24px;
+  margin-bottom: 44px;
 }
 
 .tpl-phone-data__notice svg {
@@ -526,7 +526,7 @@
   .tpl-phone-success__img {
     max-width: 324px;
     max-height: 324px;
-    margin-top: 44px;
+    margin-top: 34px;
   }
 
   .tpl-phone-data {

@@ -236,10 +236,12 @@
 
   &__number {
     width: 110px;
+    min-width: 110px;
     height: 110px;
 
     @media screen and (max-width: 575px) {
       width: 80px;
+      min-width: 80px;
       height: 80px;
     }
 
