@@ -76,7 +76,7 @@
     @media screen and (max-width: 575px) {
       max-width: 324px;
       max-height: 324px;
-      margin-top: 34px;
+      margin-top: 42px;
     }
 
 
@@ -135,7 +135,7 @@
     padding-top: 30px;
     padding-left: 16px;
     padding-right: 16px;
-    padding-bottom: 48px;
+    padding-bottom: 35px;
   }
 
   &__title {
@@ -161,8 +161,9 @@
 
     @media screen and (max-width: 575px) {
       font-size: 14px;
-      padding: 8px 16px;
-      margin-top: 20px;
+      line-height: 19px;
+      padding: 14px 16px;
+      margin-top: 29px;
     }
   }
 
@@ -227,8 +228,8 @@
 
     @media screen and (max-width: 575px) {
       font-weight: 600;
-      margin-top: 19px;
-      margin-bottom: 36px;
+      margin-top: 24px;
+      margin-bottom: 29px;
     }
 
     & svg {

@@ -38,6 +38,7 @@
   margin-top: 0;
   border: none;
   height: 58px;
+  text-align: center;
   font-weight: 500;
   font-size: 24px;
   line-height: 120%;
@@ -46,6 +47,10 @@
 
 .tpl .tpl-form-group_amount .tpl-form-group__input:focus {
   border: none;
+}
+
+.tpl .tpl-form-group_amount .tpl-form-group__btn_minus {
+  margin-left: -1px;
 }
 
 .tpl .tpl-form-group_amount .tpl-form-group__btn_plus {
@@ -159,6 +164,7 @@
   -o-transition: 0.2s;
   transition: 0.2s;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .tpl .tpl-form-group__btn:before,
@@ -175,10 +181,6 @@
           transform: translateX(-50%) translateY(-50%);
 }
 
-.tpl .tpl-form-group__btn_plus {
-  border-radius: 0px 15px 15px 0px;
-}
-
 .tpl .tpl-form-group__btn_plus:before {
   width: 20px;
   height: 2px;
@@ -187,10 +189,6 @@
 .tpl .tpl-form-group__btn_plus:after {
   width: 2px;
   height: 20px;
-}
-
-.tpl .tpl-form-group__btn_minus {
-  border-radius: 15px 0px 0px 15px;
 }
 
 .tpl .tpl-form-group__btn_minus:before {
@@ -523,7 +521,6 @@
   -webkit-column-gap: 16px;
      -moz-column-gap: 16px;
           column-gap: 16px;
-  padding-top: 9px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -602,10 +599,10 @@
 }
 
 .tpl-insurance-form__policy {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  max-width: 270px;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  max-width: 464px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -725,7 +722,7 @@
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
-    margin-top: 31px;
+    margin-top: 20px;
   }
 
   .tpl-insurance-top__actions .tpl-btn_submit {
@@ -809,7 +806,6 @@
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
-    padding-top: 0;
   }
 
   .tpl-insurance-form__sum_text {
@@ -843,20 +839,20 @@
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
-    margin-top: 31px;
+    margin-top: 20px;
   }
 
   .tpl-insurance-form__actions .tpl-btn_submit {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-    margin-bottom: 16px;
-  }
-
-  .tpl-insurance-form__policy {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+    margin-top: 15px;
+  }
+
+  .tpl-insurance-form__policy {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
     max-width: 100%;
   }
 }

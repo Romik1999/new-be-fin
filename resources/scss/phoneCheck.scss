@@ -222,10 +222,14 @@
     &:hover {
       text-decoration: underline;
     }
+
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
   }
 }
 
 
-.tpl-timer_repeat{
+.tpl-timer_repeat {
   display: none;
 }

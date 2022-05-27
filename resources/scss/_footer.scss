@@ -81,6 +81,20 @@
         object-fit: contain;
       }
     }
+
+    &_notice {
+      & a {
+        font-size: 12px;
+        line-height: 160%;
+        color: #FFFFFF;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+          color: $blue1;
+        }
+      }
+    }
   }
 
 

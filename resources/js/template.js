@@ -93,17 +93,16 @@ $(document).ready(function () {
         if (_Seconds > 0) {
             _Seconds--;
             $('.tpl-timer span').text(_Seconds);
-        }
-        else {
+        } else {
             clearInterval(int);
         }
         if (_Seconds === 0) {
-            $('.tpl-timer_repeat').fadeIn();
+            $('.tpl-timer_repeat').show().css('display', 'block');
             $('.tpl-timer').fadeOut();
         }
     }, 1000);
 
-    $("#pass").keyup(function(){
+    $("#pass").keyup(function () {
         $("button").attr('disabled', $(this).val().length < 4);
     });
 
@@ -121,7 +120,7 @@ $(document).ready(function () {
         } else if ($(this).is('.tpl-form-group__btn_plus')) {
             currentVal += Number(stepAmount);
         }
-        if (currentVal <= maxAmount && currentVal >= minAmount){
+        if (currentVal <= maxAmount && currentVal >= minAmount) {
             input.val(currentVal.toLocaleString('en-US').replace(",", " "));
             $('#confirmationform-amount').val(currentVal);
             input.trigger('change');
@@ -139,6 +138,14 @@ $(document).ready(function () {
             clearInterval(ints);
         }
     }, 48);
+
+
+    $('.js-scroller').on('click', function () {
+        const id = $(this).attr('href').slice(1);
+        $('html, body').animate({scrollTop: $(id).offset().top - 100}, 500);
+        return false
+    });
+
 });
 
 

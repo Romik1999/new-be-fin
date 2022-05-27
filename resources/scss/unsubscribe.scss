@@ -79,7 +79,7 @@
     }
 
     & .tpl-unsubscribe-data__title {
-      margin-bottom: 19px;
+      margin-bottom: 30px;
     }
 
     & .tpl-unsubscribe-data__form {
@@ -94,7 +94,7 @@
       margin-top: 36px;
 
       @media screen and (max-width: 575px) {
-        margin-top: 32px;
+        margin-top: 42px;
       }
     }
   }
@@ -160,7 +160,7 @@
     @media screen and (max-width: 575px) {
       max-width: 324px;
       max-height: 324px;
-      margin-top: 46px;
+      margin-top: 20px;
     }
 
     & > * {
@@ -256,7 +256,8 @@
 
     @media screen and (max-width: 575px) {
       font-size: 14px;
-      padding: 9px 16px;
+      padding: 11px 16px;
+      line-height: 19px;
     }
   }
 
@@ -329,11 +330,19 @@
     display: block;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
       text-decoration: underline;
     }
 
-    &_repeat{
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:not(:first-child) {
+      margin-top: 10px;
+    }
+
+    &_repeat {
       display: none;
     }
   }

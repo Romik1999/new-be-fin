@@ -38,6 +38,7 @@
   margin-top: 0;
   border: none;
   height: 58px;
+  text-align: center;
   font-weight: 500;
   font-size: 24px;
   line-height: 120%;
@@ -46,6 +47,10 @@
 
 .tpl .tpl-form-group_amount .tpl-form-group__input:focus {
   border: none;
+}
+
+.tpl .tpl-form-group_amount .tpl-form-group__btn_minus {
+  margin-left: -1px;
 }
 
 .tpl .tpl-form-group_amount .tpl-form-group__btn_plus {
@@ -159,6 +164,7 @@
   -o-transition: 0.2s;
   transition: 0.2s;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .tpl .tpl-form-group__btn:before,
@@ -175,10 +181,6 @@
           transform: translateX(-50%) translateY(-50%);
 }
 
-.tpl .tpl-form-group__btn_plus {
-  border-radius: 0px 15px 15px 0px;
-}
-
 .tpl .tpl-form-group__btn_plus:before {
   width: 20px;
   height: 2px;
@@ -187,10 +189,6 @@
 .tpl .tpl-form-group__btn_plus:after {
   width: 2px;
   height: 20px;
-}
-
-.tpl .tpl-form-group__btn_minus {
-  border-radius: 15px 0px 0px 15px;
 }
 
 .tpl .tpl-form-group__btn_minus:before {
@@ -526,14 +524,14 @@
   .tpl-phone-success__img {
     max-width: 324px;
     max-height: 324px;
-    margin-top: 34px;
+    margin-top: 42px;
   }
 
   .tpl-phone-data {
     padding-top: 30px;
     padding-left: 16px;
     padding-right: 16px;
-    padding-bottom: 48px;
+    padding-bottom: 35px;
   }
 
   .tpl-phone-data__title {
@@ -543,8 +541,9 @@
 
   .tpl-phone-data__info {
     font-size: 14px;
-    padding: 8px 16px;
-    margin-top: 20px;
+    line-height: 19px;
+    padding: 14px 16px;
+    margin-top: 29px;
   }
 
   .tpl-phone-data__form {
@@ -560,8 +559,8 @@
 
   .tpl-phone-data__notice {
     font-weight: 600;
-    margin-top: 19px;
-    margin-bottom: 36px;
+    margin-top: 24px;
+    margin-bottom: 29px;
   }
 
   .tpl-phone-data__notice svg {
